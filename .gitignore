@@ -5,6 +5,9 @@
 .vscode/
 .idea/
 
+# 源文件（Word 等，不随仓库发布）
+*.docx
+
 # 验证/临时产物
 *.log
 .shots/

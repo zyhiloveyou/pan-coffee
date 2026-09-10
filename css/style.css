@@ -424,11 +424,11 @@ button {
   border-bottom: 1px dashed var(--line);
 }
 .item__main { flex: 1 1 auto; min-width: 0; }
-.item h3 {
+.item h3, .item h4 {
   font-size: 16.5px; letter-spacing: .04em;
   display: flex; align-items: center; gap: 7px; flex-wrap: wrap;
 }
-.item h3 i {
+.item h3 i, .item h4 i {
   font-style: normal; font-size: 10px; letter-spacing: .1em;
   color: var(--moss);
   border: 1px solid rgba(111, 117, 97, .45);
@@ -446,6 +446,25 @@ button {
   border-left: 2px solid var(--line-strong);
   background: rgba(255, 255, 255, .28);
 }
+
+/* 7b 合作豆单（做成一张可扫读的「豆单卡」） ----------------------------- */
+.beancard {
+  border: 1px solid var(--line);
+  background: var(--paper);
+  padding: 4px 16px 8px;
+}
+.beans__group {
+  display: flex; align-items: baseline; justify-content: space-between; gap: 10px;
+  font-size: 17px; letter-spacing: .12em;
+  padding: 18px 0 10px;
+  border-bottom: 1px solid var(--line-strong);
+}
+.beans__group em {
+  font-size: 11px; letter-spacing: .08em; color: var(--muted);
+  white-space: nowrap;
+}
+.beans__group + .beans__list .item:last-child { border-bottom: 0; }
+.beans__list + .beans__group { margin-top: 6px; }
 
 /* 8 到店信息 ------------------------------------------------------------ */
 .info { border-top: 1px solid var(--line); }
