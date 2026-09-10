@@ -11,8 +11,9 @@
 <meta property="og:title" content="潘咖啡 · 手冲与自家烘焙">
 <meta property="og:description" content="沈阳大东区东塔 · 一杯慢慢喝的手冲咖啡。">
 
-<!-- 内联 SVG 图标，避免任何外部请求 -->
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%232f2b26'/%3E%3Cpath d='M9 12h11v6a5 5 0 0 1-5 5h-1a5 5 0 0 1-5-5z' fill='none' stroke='%23e9e4da' stroke-width='1.6'/%3E%3Cpath d='M20 14h2.5a2.5 2.5 0 0 1 0 5H20' fill='none' stroke='%23e9e4da' stroke-width='1.6'/%3E%3C/svg%3E">
+<!-- 图标由 logo 生成，见 img/ 目录 -->
+<link rel="icon" type="image/png" sizes="64x64" href="img/favicon-64.png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
 <link rel="stylesheet" href="css/style.css">
 <script>document.documentElement.classList.add('js');</script>
 <script type="application/ld+json">
@@ -40,7 +41,8 @@
 <header class="topbar" id="topbar">
   <div class="topbar__inner">
     <a class="brand" href="#top">
-      <span class="brand__mark" aria-hidden="true">潘</span>
+      <!-- 装饰性 logo：旁边已有店名文字，故 alt 留空 -->
+      <img class="brand__logo" src="img/logo.png" alt="" width="38" height="30" decoding="async">
       <span class="brand__text">
         <b>潘咖啡</b>
         <i>PAN COFFEE</i>
@@ -348,6 +350,7 @@
 
 <!-- ============ 页脚 ============ -->
 <footer class="footer">
+  <img class="footer__logo" src="img/logo.png" alt="潘咖啡" width="58" height="46" decoding="async">
   <p class="footer__brand">潘咖啡 PAN COFFEE</p>
   <p>辽宁省沈阳市大东区东塔民航小区 43 号楼</p>
   <p>每日 09:00 – 21:00 ｜ <a href="tel:13800000000">138 0000 0000</a></p>

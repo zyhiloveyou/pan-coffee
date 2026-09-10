@@ -123,13 +123,11 @@ button {
   justify-content: space-between;
 }
 
-.brand { display: flex; align-items: center; gap: 10px; min-height: 44px; }
-.brand__mark {
-  width: 30px; height: 30px;
-  display: grid; place-items: center;
-  background: var(--ink); color: var(--paper);
-  font-family: var(--font-serif); font-size: 17px;
-  border-radius: var(--radius);
+.brand { display: flex; align-items: center; gap: 9px; min-height: 44px; }
+/* logo（img/logo.png，160×128，白底已转透明通道）：30px 高，宽按 1.25:1 自适应 */
+.brand__logo {
+  height: 30px;
+  width: auto;
 }
 .brand__text { display: flex; flex-direction: column; line-height: 1.15; }
 .brand__text b { font-family: var(--font-serif); font-size: 17px; letter-spacing: .16em; }
@@ -526,6 +524,10 @@ button {
   text-align: center;
   font-size: 12.5px; line-height: 2.1; color: var(--muted);
   border-top: 1px solid var(--line);
+}
+.footer__logo {
+  height: 46px; width: auto;
+  margin: 0 auto 12px;
 }
 .footer__brand {
   font-family: var(--font-serif); font-size: 15px; letter-spacing: .2em;
