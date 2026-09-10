@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#e9e4da">
+<meta name="format-detection" content="telephone=no">
+<title>潘咖啡 · 手冲与自家烘焙｜沈阳大东区东塔</title>
+<meta name="description" content="潘咖啡，藏在沈阳大东区东塔民航小区里的手冲咖啡馆。自家烘焙单品豆、意式咖啡与手作甜点，欢迎来坐一会儿。">
+<meta property="og:type" content="website">
+<meta property="og:title" content="潘咖啡 · 手冲与自家烘焙">
+<meta property="og:description" content="沈阳大东区东塔 · 一杯慢慢喝的手冲咖啡。">
+
+<!-- 内联 SVG 图标，避免任何外部请求 -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%232f2b26'/%3E%3Cpath d='M9 12h11v6a5 5 0 0 1-5 5h-1a5 5 0 0 1-5-5z' fill='none' stroke='%23e9e4da' stroke-width='1.6'/%3E%3Cpath d='M20 14h2.5a2.5 2.5 0 0 1 0 5H20' fill='none' stroke='%23e9e4da' stroke-width='1.6'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/style.css">
+<script>document.documentElement.classList.add('js');</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CafeOrCoffeeShop",
+  "name": "潘咖啡",
+  "description": "手冲单品与自家烘焙咖啡，沈阳大东区东塔。",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "东塔民航小区 43 号楼",
+    "addressLocality": "沈阳市",
+    "addressRegion": "辽宁省",
+    "addressCountry": "CN"
+  },
+  "servesCuisine": "咖啡",
+  "priceRange": "¥¥"
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">跳到主要内容</a>
+
+<!-- ============ 顶栏 ============ -->
+<header class="topbar" id="topbar">
+  <div class="topbar__inner">
+    <a class="brand" href="#top">
+      <span class="brand__mark" aria-hidden="true">潘</span>
+      <span class="brand__text">
+        <b>潘咖啡</b>
+        <i>PAN COFFEE</i>
+      </span>
+    </a>
+    <button class="burger" type="button" id="burger" aria-label="打开菜单" aria-expanded="false" aria-controls="drawer">
+      <span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ============ 抽屉菜单 ============ -->
+<div class="drawer" id="drawer" hidden>
+  <nav class="drawer__panel" aria-label="站内导航">
+    <p class="drawer__label">目录</p>
+    <ul class="drawer__list">
+      <li><a href="#about"><span>壹</span>关于潘咖啡</a></li>
+      <li><a href="#signature"><span>贰</span>招牌推荐</a></li>
+      <li><a href="#menu"><span>叁</span>菜单与价格</a></li>
+      <li><a href="#store"><span>肆</span>到店信息</a></li>
+      <li><a href="#gallery"><span>伍</span>店内一角</a></li>
+    </ul>
+    <div class="drawer__foot">
+      <p>沈阳市大东区东塔民航小区 43 号楼</p>
+      <p>每日 09:00 – 21:00</p>
+    </div>
+  </nav>
+  <button class="drawer__mask" type="button" id="drawerMask" aria-label="关闭菜单" tabindex="-1"></button>
+</div>
+
+<main id="main">
+  <!-- ============ 首屏 ============ -->
+  <section class="hero" id="top">
+    <div class="hero__paper" aria-hidden="true"></div>
+
+    <p class="hero__vertical" aria-hidden="true">一杯一世界</p>
+
+    <div class="hero__art" aria-hidden="true">
+      <svg viewBox="0 0 200 220" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.4">
+        <path d="M62 74h76l-9 52a14 14 0 0 1-14 12H85a14 14 0 0 1-14-12z"/>
+        <path d="M138 86h13a13 13 0 0 1 0 26h-16" opacity=".7"/>
+        <path d="M96 60c0-8 8-8 8-16M118 60c0-8 8-8 8-16" opacity=".55"/>
+        <path d="M52 152h96" opacity=".5"/>
+        <circle cx="100" cy="112" r="9" opacity=".35"/>
+      </svg>
+    </div>
+
+    <div class="hero__content">
+      <p class="hero__eyebrow">沈阳 · 大东区 · 东塔</p>
+      <h1 class="hero__title">潘咖啡</h1>
+      <p class="hero__latin">PAN&nbsp;COFFEE</p>
+      <p class="hero__lead">手冲单品 · 自家烘焙 · 手作甜点<br>把时间还给一杯咖啡。</p>
+      <div class="hero__actions">
+        <a class="btn btn--solid" href="#menu">看菜单</a>
+        <a class="btn btn--ghost" href="#store">到店导航</a>
+      </div>
+    </div>
+
+    <a class="hero__scroll" href="#about" aria-label="向下浏览">
+      <span></span>
+    </a>
+  </section>
+
+  <!-- ============ 关于 ============ -->
+  <section class="section" id="about">
+    <header class="section__head" data-reveal>
+      <p class="section__num">壹</p>
+      <h2 class="section__title">关于潘咖啡</h2>
+    </header>
+
+    <div class="prose" data-reveal>
+      <p>店不大，在老小区的一楼，窗外是东塔的树影。我们没有很响的音乐，只有磨豆机、手冲壶的水声，和偶尔翻书的声音。</p>
+      <p>豆子每周小批烘焙，浅中焙为主，尽量做出干净、透亮的味道。手冲默认按你的口味调整水温与粉水比，喝不惯苦的，可以直接告诉我们。</p>
+      <p>不必讲究，坐一会儿就好。</p>
+    </div>
+
+    <ul class="facts" data-reveal>
+      <li>
+        <b>每周</b>
+        <span>小批量烘焙</span>
+      </li>
+      <li>
+        <b>6 – 8</b>
+        <span>常备单品豆</span>
+      </li>
+      <li>
+        <b>不限时</b>
+        <span>不催座 · 可续水</span>
+      </li>
+    </ul>
+  </section>
+
+  <!-- ============ 招牌 ============ -->
+  <section class="section section--tint" id="signature">
+    <header class="section__head" data-reveal>
+      <p class="section__num">贰</p>
+      <h2 class="section__title">招牌推荐</h2>
+      <p class="section__note">左右滑动看看</p>
+    </header>
+
+    <ul class="cards" data-reveal>
+      <li class="card">
+        <div class="card__art card__art--pour" aria-hidden="true">
+          <svg viewBox="0 0 80 80" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.3">
+            <path d="M24 20h22l-4 18H28z"/><path d="M46 24h7a5 5 0 0 1 0 10h-9"/>
+            <path d="M50 44c0 8-6 14-13 14S24 52 24 44" opacity=".6"/>
+            <path d="M34 46v10" opacity=".6"/>
+          </svg>
+        </div>
+        <h3>手冲单品</h3>
+        <p>埃塞俄比亚、哥伦比亚、云南轮换。<br>一杯约 200ml，慢慢喝。</p>
+        <p class="card__price">¥32 起</p>
+      </li>
+
+      <li class="card">
+        <div class="card__art card__art--latte" aria-hidden="true">
+          <svg viewBox="0 0 80 80" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.3">
+            <path d="M20 26h34v18a17 17 0 0 1-34 0z"/>
+            <path d="M54 30h6a6 6 0 0 1 0 12h-7" opacity=".6"/>
+            <path d="M28 20c0-4 4-4 4-8M40 20c0-4 4-4 4-8" opacity=".5"/>
+            <path d="M30 38c4-5 12-5 16 0" opacity=".7"/>
+          </svg>
+        </div>
+        <h3>桂花生椰拿铁</h3>
+        <p>厚椰乳打底，撒一小撮干桂花。<br>热饮更香，冰饮更清爽。</p>
+        <p class="card__price">¥34</p>
+      </li>
+
+      <li class="card">
+        <div class="card__art card__art--cake" aria-hidden="true">
+          <svg viewBox="0 0 80 80" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.3">
+            <path d="M22 40h36v14a6 6 0 0 1-6 6H28a6 6 0 0 1-6-6z"/>
+            <path d="M22 46c6 4 12-2 18 1s12-5 18-1" opacity=".6"/>
+            <path d="M40 22v18" opacity=".4"/>
+          </svg>
+        </div>
+        <h3>巴斯克芝士</h3>
+        <p>外层焦香、内里流心，<br>配手冲或美式都合适。</p>
+        <p class="card__price">¥32</p>
+      </li>
+
+      <li class="card">
+        <div class="card__art card__art--bean" aria-hidden="true">
+          <svg viewBox="0 0 80 80" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.3">
+            <ellipse cx="32" cy="38" rx="12" ry="16" transform="rotate(-24 32 38)"/>
+            <path d="M24 30c6 6 8 14 6 22" opacity=".6"/>
+            <ellipse cx="52" cy="46" rx="9" ry="12" transform="rotate(18 52 46)"/>
+          </svg>
+        </div>
+        <h3>挂耳 / 熟豆</h3>
+        <p>店内同款豆子，可带走。<br>挂耳一盒 10 包，熟豆半磅起。</p>
+        <p class="card__price">¥58 起</p>
+      </li>
+    </ul>
+  </section>
+
+  <!-- ============ 菜单 ============ -->
+  <section class="section" id="menu">
+    <header class="section__head" data-reveal>
+      <p class="section__num">叁</p>
+      <h2 class="section__title">菜单与价格</h2>
+      <p class="section__note">价格为示例，请以店内为准</p>
+    </header>
+
+    <div class="tabs" role="tablist" aria-label="菜单分类" data-reveal>
+      <button class="tab is-active" type="button" role="tab" aria-selected="true" data-cat="pour">手冲单品</button>
+      <button class="tab" type="button" role="tab" aria-selected="false" data-cat="espresso">意式咖啡</button>
+      <button class="tab" type="button" role="tab" aria-selected="false" data-cat="special">特调</button>
+      <button class="tab" type="button" role="tab" aria-selected="false" data-cat="other">非咖啡</button>
+      <button class="tab" type="button" role="tab" aria-selected="false" data-cat="dessert">甜点</button>
+    </div>
+
+    <div class="menu" data-reveal>
+      <ul class="menu__list is-active" data-panel="pour">
+        <li class="item"><div class="item__main"><h3>耶加雪菲 <i>水洗</i></h3><p>埃塞俄比亚 · 柑橘 白花 蜂蜜</p></div><p class="item__price">¥38</p></li>
+        <li class="item"><div class="item__main"><h3>西达摩 <i>日晒</i></h3><p>埃塞俄比亚 · 蓝莓 红酒 可可</p></div><p class="item__price">¥42</p></li>
+        <li class="item"><div class="item__main"><h3>慧兰 <i>水洗</i></h3><p>哥伦比亚 · 焦糖 坚果 柑橘</p></div><p class="item__price">¥36</p></li>
+        <li class="item"><div class="item__main"><h3>保山 <i>日晒</i></h3><p>云南 · 红糖 桂圆 莓果</p></div><p class="item__price">¥32</p></li>
+        <li class="item"><div class="item__main"><h3>店长手冲 <i>当日豆</i></h3><p>由主理人挑选，随豆单更换</p></div><p class="item__price">¥48</p></li>
+      </ul>
+
+      <ul class="menu__list" data-panel="espresso">
+        <li class="item"><div class="item__main"><h3>浓缩 Espresso</h3><p>双份 · 中深焙拼配</p></div><p class="item__price">¥18</p></li>
+        <li class="item"><div class="item__main"><h3>美式 Americano</h3><p>冰 / 热</p></div><p class="item__price">¥22</p></li>
+        <li class="item"><div class="item__main"><h3>拿铁 Latte</h3><p>更换燕麦奶 +3</p></div><p class="item__price">¥28</p></li>
+        <li class="item"><div class="item__main"><h3>卡布奇诺</h3><p>奶泡厚一些</p></div><p class="item__price">¥28</p></li>
+        <li class="item"><div class="item__main"><h3>澳白 Flat White</h3><p>奶量少，咖啡味更足</p></div><p class="item__price">¥30</p></li>
+        <li class="item"><div class="item__main"><h3>摩卡 Mocha</h3><p>黑巧 + 淡奶油</p></div><p class="item__price">¥32</p></li>
+      </ul>
+
+      <ul class="menu__list" data-panel="special">
+        <li class="item"><div class="item__main"><h3>冷萃 Cold Brew</h3><p>低温浸泡 16 小时 · 微气泡</p></div><p class="item__price">¥30</p></li>
+        <li class="item"><div class="item__main"><h3>桂花生椰拿铁</h3><p>招牌 · 可热可冰</p></div><p class="item__price">¥34</p></li>
+        <li class="item"><div class="item__main"><h3>橙 C 美式</h3><p>鲜榨橙汁 + 浓缩</p></div><p class="item__price">¥32</p></li>
+        <li class="item"><div class="item__main"><h3>西柚气泡冷萃</h3><p>苏打 + 西柚 + 冷萃</p></div><p class="item__price">¥36</p></li>
+      </ul>
+
+      <ul class="menu__list" data-panel="other">
+        <li class="item"><div class="item__main"><h3>抹茶拿铁</h3><p>无糖可选</p></div><p class="item__price">¥30</p></li>
+        <li class="item"><div class="item__main"><h3>焙茶拿铁</h3><p>焦香焙茶 · 热饮为主</p></div><p class="item__price">¥30</p></li>
+        <li class="item"><div class="item__main"><h3>鲜奶可可</h3><p>75% 黑巧</p></div><p class="item__price">¥26</p></li>
+        <li class="item"><div class="item__main"><h3>手作柠檬水</h3><p>无咖啡因 · 免费续水</p></div><p class="item__price">¥22</p></li>
+      </ul>
+
+      <ul class="menu__list" data-panel="dessert">
+        <li class="item"><div class="item__main"><h3>巴斯克芝士</h3><p>每日限量 12 块</p></div><p class="item__price">¥32</p></li>
+        <li class="item"><div class="item__main"><h3>可露丽</h3><p>外脆内软 · 配手冲很合</p></div><p class="item__price">¥18</p></li>
+        <li class="item"><div class="item__main"><h3>原味司康</h3><p>附果酱与黄油</p></div><p class="item__price">¥20</p></li>
+        <li class="item"><div class="item__main"><h3>手作曲奇</h3><p>按块售卖 · 可打包</p></div><p class="item__price">¥15</p></li>
+      </ul>
+    </div>
+
+    <p class="menu__foot" data-reveal>自带杯立减 ¥3 ｜ 堂食不限时，提供白水与 WiFi</p>
+  </section>
+
+  <!-- ============ 到店信息 ============ -->
+  <section class="section section--tint" id="store">
+    <header class="section__head" data-reveal>
+      <p class="section__num">肆</p>
+      <h2 class="section__title">到店信息</h2>
+    </header>
+
+    <dl class="info" data-reveal>
+      <div class="info__row">
+        <dt>地址</dt>
+        <dd>辽宁省沈阳市大东区东塔民航小区 43 号楼</dd>
+      </div>
+      <div class="info__row">
+        <dt>营业</dt>
+        <dd>每日 09:00 – 21:00<em>（示例，请按实际修改）</em></dd>
+      </div>
+      <div class="info__row">
+        <dt>电话</dt>
+        <dd><a href="tel:13800000000">138 0000 0000</a><em>（示例，请替换真实号码）</em></dd>
+      </div>
+      <div class="info__row">
+        <dt>交通</dt>
+        <dd>导航搜索「东塔民航小区」，43 号楼即到；院内可短暂停车。</dd>
+      </div>
+      <div class="info__row">
+        <dt>提示</dt>
+        <dd>店内座位不多，周末建议提前微信问一下空位。</dd>
+      </div>
+    </dl>
+
+    <div class="mapcard" data-reveal>
+      <div class="mapcard__art" aria-hidden="true">
+        <svg viewBox="0 0 320 150" fill="none" stroke="currentColor" stroke-width="1.4">
+          <path d="M0 104h320" opacity=".55"/>
+          <path d="M0 46h320" opacity=".3"/>
+          <path d="M64 0v150M212 0v150" opacity=".3"/>
+          <path d="M118 104V46M268 104V46" opacity=".25"/>
+          <path d="M0 150c40-16 60-30 92-30" opacity=".2"/>
+          <rect x="130" y="60" width="58" height="34" rx="4" fill="currentColor" fill-opacity=".08"/>
+          <circle cx="152" cy="52" r="7" fill="currentColor"/>
+          <path d="M152 43c-5 0-9 4-9 9 0 7 9 15 9 15s9-8 9-15c0-5-4-9-9-9z" fill="currentColor" stroke="none"/>
+        </svg>
+      </div>
+      <p class="mapcard__text">43 号楼 · 一层沿街</p>
+      <div class="mapcard__actions">
+        <a class="btn btn--solid btn--sm" href="https://uri.amap.com/search?keyword=%E6%BD%98%E5%92%96%E5%95%A1%20%E6%B2%88%E9%98%B3%E5%B8%82%E5%A4%A7%E4%B8%9C%E5%8C%BA%E4%B8%9C%E5%A1%94%E6%B0%91%E8%88%AA%E5%B0%8F%E5%8C%BA43%E5%8F%B7%E6%A5%BC" target="_blank" rel="noopener">高德地图</a>
+        <a class="btn btn--ghost btn--sm" href="https://maps.apple.com/?q=%E6%BD%98%E5%92%96%E5%95%A1%20%E6%B2%88%E9%98%B3%E5%B8%82%E5%A4%A7%E4%B8%9C%E5%8C%BA%E4%B8%9C%E5%A1%94%E6%B0%91%E8%88%AA%E5%B0%8F%E5%8C%BA43%E5%8F%B7%E6%A5%BC" target="_blank" rel="noopener">Apple 地图</a>
+        <button class="btn btn--ghost btn--sm" type="button" id="copyAddr" data-addr="辽宁省沈阳市大东区东塔民航小区 43 号楼">复制地址</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 店内一角 ============ -->
+  <section class="section" id="gallery">
+    <header class="section__head" data-reveal>
+      <p class="section__num">伍</p>
+      <h2 class="section__title">店内一角</h2>
+      <p class="section__note">实拍照片可替换此处的占位图</p>
+    </header>
+
+    <!-- 占位图：把 <figure> 内的 div 换成 <img src="img/xxx.jpg" alt="..." loading="lazy" decoding="async"> 即可 -->
+    <div class="gallery" data-reveal>
+      <figure class="shot shot--tall">
+        <div class="shot__ph shot__ph--1" aria-hidden="true"></div>
+        <figcaption>吧台与手冲壶</figcaption>
+      </figure>
+      <figure class="shot">
+        <div class="shot__ph shot__ph--2" aria-hidden="true"></div>
+        <figcaption>窗边的位置</figcaption>
+      </figure>
+      <figure class="shot">
+        <div class="shot__ph shot__ph--3" aria-hidden="true"></div>
+        <figcaption>当日豆单</figcaption>
+      </figure>
+      <figure class="shot">
+        <div class="shot__ph shot__ph--4" aria-hidden="true"></div>
+        <figcaption>一杯耶加雪菲</figcaption>
+      </figure>
+      <figure class="shot">
+        <div class="shot__ph shot__ph--5" aria-hidden="true"></div>
+        <figcaption>烘焙日的下午</figcaption>
+      </figure>
+      <figure class="shot shot--wide">
+        <div class="shot__ph shot__ph--6" aria-hidden="true"></div>
+        <figcaption>傍晚，灯亮起来的时候</figcaption>
+      </figure>
+    </div>
+  </section>
+</main>
+
+<!-- ============ 页脚 ============ -->
+<footer class="footer">
+  <p class="footer__brand">潘咖啡 PAN COFFEE</p>
+  <p>辽宁省沈阳市大东区东塔民航小区 43 号楼</p>
+  <p>每日 09:00 – 21:00 ｜ <a href="tel:13800000000">138 0000 0000</a></p>
+  <p class="footer__copy">© <span id="year">2025</span> 潘咖啡 · 页面内容为示例，可按需修改</p>
+</footer>
+
+<!-- ============ 底部操作栏 ============ -->
+<div class="actionbar" id="actionbar">
+  <a class="actionbar__btn" href="tel:13800000000">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M6 3h3l2 5-2 1a12 12 0 0 0 6 6l1-2 5 2v3a2 2 0 0 1-2.2 2A17 17 0 0 1 4 5.2 2 2 0 0 1 6 3z"/></svg>
+    <span>打电话</span>
+  </a>
+  <a class="actionbar__btn" href="https://uri.amap.com/search?keyword=%E6%BD%98%E5%92%96%E5%95%A1%20%E6%B2%88%E9%98%B3%E5%B8%82%E5%A4%A7%E4%B8%9C%E5%8C%BA%E4%B8%9C%E5%A1%94%E6%B0%91%E8%88%AA%E5%B0%8F%E5%8C%BA43%E5%8F%B7%E6%A5%BC" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 21s7-6.3 7-11a7 7 0 1 0-14 0c0 4.7 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>
+    <span>导航到店</span>
+  </a>
+  <button class="actionbar__btn actionbar__btn--primary" type="button" id="wechatBtn" data-wechat="pancoffee_sy">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 20l1.3-3.6A7.6 7.6 0 0 1 4 12.4C4 8.3 7.6 5 12 5s8 3.3 8 7.4-3.6 7.4-8 7.4a9 9 0 0 1-3.2-.6z"/><path d="M9 11h.01M15 11h.01" stroke-width="2.2"/></svg>
+    <span>微信预约</span>
+  </button>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>

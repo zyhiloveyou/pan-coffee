@@ -1,0 +1,12 @@
+# macOS
+.DS_Store
+
+# 编辑器
+.vscode/
+.idea/
+
+# 验证/临时产物
+*.log
+.shots/
+.verify.html
+.probe*.js
