@@ -23,6 +23,14 @@
   "name": "潘咖啡",
   "description": "合作豆单、手冲与咖啡特调，沈阳大东区东塔。",
   "telephone": "+86 138 4007 8615",
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "08:00",
+      "closes": "17:00"
+    }
+  ],
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "东塔民航小区 43 号楼",
@@ -69,7 +77,7 @@
     </ul>
     <div class="drawer__foot">
       <p>沈阳市大东区东塔民航小区 43 号楼</p>
-      <p>每日 09:00 – 21:00</p>
+      <p>周日 – 周五 08:00 – 17:00 · 周六店休</p>
     </div>
   </nav>
   <button class="drawer__mask" type="button" id="drawerMask" aria-label="关闭菜单" tabindex="-1"></button>
@@ -505,7 +513,7 @@
       </div>
       <div class="info__row">
         <dt>营业</dt>
-        <dd>每日 09:00 – 21:00<em>（示例，请按实际修改）</em></dd>
+        <dd>周日 – 周五 08:00 – 17:00<em class="info__closed">周六店休</em></dd>
       </div>
       <div class="info__row">
         <dt>电话</dt>
@@ -513,11 +521,7 @@
       </div>
       <div class="info__row">
         <dt>交通</dt>
-        <dd>导航搜索「东塔民航小区」，43 号楼即到；院内可短暂停车。</dd>
-      </div>
-      <div class="info__row">
-        <dt>提示</dt>
-        <dd>店内座位不多，周末建议提前微信问一下空位。</dd>
+        <dd>导航搜索「东塔民航小区」，43 号楼即到。</dd>
       </div>
     </dl>
 
@@ -548,10 +552,10 @@
     <header class="section__head" data-reveal>
       <p class="section__num">陆</p>
       <h2 class="section__title">店内一角</h2>
-      <p class="section__note">实拍照片可替换此处的占位图</p>
     </header>
 
-    <!-- 占位图：把 <figure> 内的 div 换成 <img src="img/xxx.jpg" alt="..." loading="lazy" decoding="async"> 即可 -->
+    <!-- 这里是占位色块（顾客可见）。换实拍照片：把 <figure> 内的 <div class="shot__ph …"> 换成
+         <img src="img/xxx.jpg" alt="说明" loading="lazy" decoding="async"> 即可，样式不用动 -->
     <div class="gallery" data-reveal>
       <figure class="shot shot--tall">
         <div class="shot__ph shot__ph--1" aria-hidden="true"></div>
@@ -586,8 +590,9 @@
   <img class="footer__logo" src="img/logo.png" alt="潘咖啡" width="58" height="46" decoding="async">
   <p class="footer__brand">潘咖啡 PAN COFFEE</p>
   <p>辽宁省沈阳市大东区东塔民航小区 43 号楼</p>
-  <p>每日 09:00 – 21:00 ｜ <a href="tel:13840078615">138 4007 8615</a></p>
-  <p class="footer__copy">© <span id="year">2025</span> 潘咖啡 · 页面内容为示例，可按需修改</p>
+  <p>周日 – 周五 08:00 – 17:00 ｜ 周六店休</p>
+  <p><a href="tel:13840078615">138 4007 8615</a></p>
+  <p class="footer__copy">© <span id="year">2025</span> 潘咖啡 · 沈阳大东区东塔</p>
 </footer>
 
 <!-- ============ 底部操作栏 ============ -->

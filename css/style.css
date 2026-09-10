@@ -491,6 +491,8 @@ button {
   border-bottom: 1px solid rgba(138, 74, 38, .4);
 }
 .info dd em { display: block; font-size: 11px; color: var(--muted); margin-top: 2px; }
+/* 店休这类需要注意的信息给一点强调色（柿色，5.4:1） */
+.info dd em.info__closed { color: var(--persimmon); font-size: 12px; letter-spacing: .04em; }
 
 .mapcard {
   margin-top: 24px;
