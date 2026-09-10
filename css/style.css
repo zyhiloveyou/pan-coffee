@@ -616,7 +616,9 @@ button {
   .hero__art { width: 76px; }
   .hero__eyebrow { margin-bottom: 8px; }
   .hero__lead { margin-top: 14px; line-height: 1.85; }
-  .hero__actions { margin-top: 20px; }
+  .hero__actions { margin-top: 20px; gap: 9px; }
+  /* 矮屏：三个按钮收紧内距，保证仍在一行内 */
+  .hero__actions .btn { padding: 0 15px; font-size: 13px; letter-spacing: .08em; min-height: 44px; }
   .hero__vertical { top: 12%; font-size: 12px; }
   .hero__scroll { bottom: 14px; }
 }
