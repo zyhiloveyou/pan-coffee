@@ -7,6 +7,7 @@
 ```
 pan-coffee/
 ├── index.html          页面结构（内容 + 19 个内联 SVG 插画 + SEO/结构化数据）
+├── v2.html             跳转页（仅为兼容早期分享出去的 /v2.html 链接，不含内容）
 ├── css/style.css       全部样式（移动优先，4 个断点）
 ├── js/main.js          交互（抽屉菜单、分类切换、滚动显隐、复制地址/微信号）
 ├── img/                logo 与图标（由你的原图生成，见「替换 logo」）
@@ -23,6 +24,14 @@ python3 -m http.server 8080        # 然后手机浏览器访问 http://<电脑�
 直接双击 `index.html` 也能看，但**用真机 + 局域网地址**才能看到固定底栏、抽屉菜单、刘海屏安全区等移动端效果。
 
 预览图：`preview/mobile-hero.png`（首屏）、`preview/mobile-full.png`（全页）、`preview/desktop-1280.png`（桌面）。
+
+### 关于 `v2.html`
+
+早期方案对比阶段，页面曾放在 `/v2.html`，这个链接已经分享出去了，所以**保留一个跳转页**：打开它会立刻跳到站点根地址（带锚点也会一起带过去，例如 `/v2.html#menu` → `/#menu`）。
+
+- 它**不含任何正文**，内容只有一份（`index.html`），不存在两份要同步维护的问题。
+- 带 `noindex` 与 `canonical="./"`，不会被搜索引擎重复收录。
+- **以后分享请用根地址** `https://zyhiloveyou.github.io/pan-coffee/`。
 
 ## 页面包含的区块
 
