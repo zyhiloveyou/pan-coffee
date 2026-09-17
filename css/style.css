@@ -162,6 +162,7 @@ button {
 
 .drawer__panel {
   position: absolute; inset: 0 0 0 auto;
+  z-index: 1;                 /* 必须在遮罩之上，否则菜单会一起被压暗 */
   width: min(84vw, 360px);
   background: var(--paper);
   border-left: 1px solid var(--line);
