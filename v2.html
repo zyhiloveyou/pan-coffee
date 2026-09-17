@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#fdf9f2">
+<!-- 老链接的跳转页：内容只有一份（在站点根目录），这里不重复放内容 -->
+<meta name="robots" content="noindex">
+<link rel="canonical" href="./">
+<meta http-equiv="refresh" content="0; url=./">
+<title>潘咖啡 · 正在打开主页</title>
+<style>
+  body {
+    margin: 0; min-height: 100vh; display: grid; place-items: center;
+    padding: 24px; text-align: center;
+    background: #fdf9f2; color: #5c4a3e;
+    font: 15px/1.8 -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+  }
+  p { margin: 0; }
+  a { color: #ad5a15; font-weight: 700; }
+  .dot { display: inline-block; width: 8px; height: 8px; margin-right: 8px; border-radius: 50%;
+         background: #ad5a15; animation: blink 1s ease-in-out infinite; vertical-align: 1px; }
+  @keyframes blink { 0%, 100% { opacity: .25; } 50% { opacity: 1; } }
+  @media (prefers-reduced-motion: reduce) { .dot { animation: none; opacity: 1; } }
+</style>
+<script>
+  // 保留锚点：v2.html#menu → 主页的 #menu；用 replace 避免用户按返回键时来回跳。
+  // 线上（http/https）跳干净的根地址；本地双击打开（file:）时根地址是目录列表，所以跳 index.html。
+  var target = (location.protocol === 'file:' ? 'index.html' : './') + (location.hash || '');
+  location.replace(target);
+</script>
+</head>
+<body>
+  <p><span class="dot" aria-hidden="true"></span>正在打开潘咖啡主页……</p>
+  <p><a href="index.html">如果没有自动跳转，点这里</a></p>
+</body>
+</html>
